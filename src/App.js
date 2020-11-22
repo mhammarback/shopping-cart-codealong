@@ -3,9 +3,11 @@ import { Provider } from 'react-redux'
 import { configureStore, combineReducers } from '@reduxjs/toolkit'
 import { Products } from 'components/Products'
 import { Cart } from 'components/Cart'
+import { Header } from 'components/Header'
 
 import { cart } from 'reducers/cart'
 import { products } from 'reducers/products'
+
 
 const reducer = combineReducers({
   cart:cart.reducer,
@@ -16,6 +18,7 @@ const store = configureStore({ reducer: reducer })
 
 export const App = () => (
   <Provider store={store}>
+     <Header />
     <Cart />
     <Products />
   </Provider>

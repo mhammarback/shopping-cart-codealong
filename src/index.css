@@ -28,11 +28,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .product {
-  background: rgb(255, 223, 231);
+  background: #f1f6f9;
   padding: 20px;
   text-align: center;
   font-size: 20px;
   font-weight: bold;
+  margin-top:20px;
 }
 
 .product .emoji {
@@ -44,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   appearance: none;
   border: none;
-  background: rgb(246, 166, 34);
+  background:#FFA635;
   border-radius: 20px;
   padding: 10px 20px;
   color: white;
@@ -54,11 +55,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cart {
-  background: #0003ff;
+  background: #14274e;
   color: #fff;
   padding: 20px;
   margin-bottom: 20px;
   display: flex;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
 }
 
 .cart .emoji {
@@ -144,3 +148,17 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
 }
 
+header {
+  height: 150px;
+}
+
+
+/***Media***/
+
+@media (max-width: 700px) {
+.products {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+}
